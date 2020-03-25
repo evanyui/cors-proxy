@@ -1,0 +1,15 @@
+{
+  "name": "cors-proxy",
+  "version": "1.0.0",
+  "description": "cors url getter",
+  "main": "index.js",
+  "scripts": {
+      "build": "pkg -t node8 index.js --output build/get-cors",
+      "clean": "rm -rf build/"
+  },
+  "author": "Chuanyui",
+  "license": "ISC",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
