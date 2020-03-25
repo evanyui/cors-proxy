@@ -4,12 +4,15 @@
   "description": "cors url getter",
   "main": "index.js",
   "scripts": {
-      "build": "pkg -t node8 index.js --output build/get-cors",
-      "clean": "rm -rf build/"
+    "build": "pkg -t node8 index.js --output build/get-cors",
+    "clean": "rm -rf build/"
   },
   "author": "Chuanyui",
   "license": "ISC",
   "dependencies": {
     "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "pkg": "^4.4.4"
   }
 }
