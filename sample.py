@@ -1,4 +1,8 @@
-from subprocess import call
+from subprocess import Popen, PIPE, STDOUT
 
-# Note that you have to specify path to script
-call(["./build/get-cors", "https://www.cosdna.com/eng/cosmetic_4fb4290408.html"])
+cmd = "./build/get-cors https://www.cosdna.com/eng/cosmetic_4fb4290408.html"
+
+p = Popen(cmd, shell=True, stdout=PIPE, stderr=STDOUT)
+output = p.stdout.read()
+
+print(output)
